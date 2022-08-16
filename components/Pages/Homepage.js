@@ -19,7 +19,7 @@ export default function Homepage({ data }) {
       />
       {filterProducts.map((data, index) => (
         <>
-          <Card
+          <Card 
             key={index}
             image={data.image.original}
             name={data.name}
@@ -33,7 +33,7 @@ export default function Homepage({ data }) {
 
 function Container({ children }) {
   return (
-    <div className=" mx-auto px-6 flex flex-wrap gap-4 sm:gap-6 items-center justify-center my-4">
+    <div className=" mx-auto px-2 md:px-6 flex flex-wrap gap-1 sm:gap-6 items-center justify-center my-4">
       {children}
     </div>
   )
